@@ -1,0 +1,332 @@
+html{
+	height: 100%;
+	width: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-weight:'Microsoft YaHei';
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+header {
+  width: 100%;
+  background-color: #069DD4;
+  color: white;
+  height: 3em;
+}
+.headIcon {
+  background: url(../imgs/icon-nav.png)center no-repeat;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  background-size: 1.5em;
+  float: left;
+  padding: 1.5em 1.5em;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.backIcon{
+  background: url(../imgs/icon-back.png) center no-repeat;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  background-size: 1.5em;
+  float: left;
+  padding: 1.5em 1.5em;
+  transition:  0.5s;
+	/* Firefox 4 */
+	-moz-transition: 0.5s;
+	/* Safari and Chrome */
+	-webkit-transition: 0.5s;
+	/* Opera */
+	-o-transition: 0.5s;
+}
+h1 {
+  text-align: left;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0.3em 5%;
+  padding-left: 4em;
+  font-size: 2rem;
+  line-height: 1.5em;
+}
+h1.title {
+  display: inline-block;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  position: absolute;
+  padding-left: 0;
+}
+h1.name{
+  position: absolute;
+  display: inline-block;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  /* margin-top: -3.9em; */
+  top: 0em;
+  padding-left: 0em;
+}
+.none{
+	opacity: 0;
+}
+section {
+  position: absolute;
+  top: 3em;
+  bottom: 3em;
+  left: 0px;
+  right: 0px;
+}
+section>div{
+	width: 100%;
+	height: 100%;
+	color: white;
+	display: none;
+}
+section iframe{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0px;
+}
+
+.content1 {
+  background-color: white;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content2{
+	background-color: #33CD5F;
+	height: 100%;
+	width: 100%;
+}
+.content3{
+	background-color: #FFC900;
+	height: 100%;
+	width: 100%;
+}
+.content4{
+	background-color: #886AEA;
+	height: 100%;
+	width: 100%;
+}
+.show{
+	display: block;
+}
+h2{
+	margin: 0px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+/*底部*/
+footer {
+  background-color: #EFEFEF;
+  height: 3.1em;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+footer div {
+  display: inline-block;
+  color: rgba(0,0,0,0.9);
+  width: 23.9%;
+  height: 3em;
+  outline: none;
+  cursor: pointer;
+}
+footer div span{
+	width: 100%;
+	height: 50%;
+	display: block;
+	margin-top: 5%;
+}
+footer div p {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 2px;
+}
+
+.incon-weixin{
+	background: url(../imgs/icon-weixin.png) center no-repeat;
+	background-size: contain;
+}
+.incon-address{
+	background: url(../imgs/icon-address.png) center no-repeat;
+	background-size: contain;
+}
+.incon-found{
+	background: url(../imgs/icon-found.png) center no-repeat;
+	background-size: contain;
+}
+.incon-me{
+	background: url(../imgs/icon-me.png) center no-repeat;
+	background-size: contain;
+}
+.incon-weixin.show{
+	background: url(../imgs/icon-weixin1.png) center no-repeat;
+	background-size: contain;
+}
+.incon-address.show{
+	background: url(../imgs/icon-address1.png) center no-repeat;
+	background-size: contain;
+}
+.incon-found.show{
+	background: url(../imgs/icon-found1.png) center no-repeat;
+	background-size: contain;
+}
+.incon-me.show{
+	background: url(../imgs/icon-me1.png) center no-repeat;
+	background-size: contain;
+}
+
+/*侧栏*/
+.sidebar{
+	display: none;
+	/*left: -100%;*/
+	position: absolute;
+	top: 3em;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	z-index: 1;
+	transition:0.3s;
+	-moz-transition:0.3s; /* Firefox 4 */
+	-webkit-transition:0.3s; /* Safari and Chrome */
+	-o-transition:0.3s; /* Opera */
+}
+
+.content{
+	position: absolute;
+	top: 0;
+	width: 70%;
+	background-color: white;
+	z-index: 2;
+	color: black;
+	animation:animate 0.3s;
+	-moz-animation:animate 0.3s;
+	-webkit-animation:animate 0.3s;
+	-o-animation:animate 0.3s;
+}
+/*侧栏动画*/
+@keyframes animate{
+	from{left: -100%}
+	to{left: 0;}
+}
+@-moz-keyframes animate{
+	from{left: -100%}
+	to{left: 0;}
+}
+@-webkit-keyframes animate{
+	from{left: -100%}
+	to{left: 0;}
+}
+@-o-keyframes animate{
+	from{left: -100%}
+	to{left: 0;}
+}
+.quit{
+	animation:quit 0.3s;
+	-moz-animation:quit 0.3s;
+	-webkit-animation:quit 0.3s;
+	-o-animation:quit 0.3s;
+}
+/*侧栏动画*/
+@keyframes quit{
+	from{left: 0;}
+	to{left: -70%;}
+}
+@-moz-keyframes quit{
+	from{left: 0}
+	to{left: -70%;}
+}
+@-webkit-keyframes quit{
+	from{left: 0;}
+	to{left: -70%;}
+}
+@-o-keyframes quit{
+	from{left: 0;}
+	to{left: -70%;}
+}
+ul{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+.content li{
+	margin: 0;
+	list-style: none;
+	margin-top: 1em;
+}
+.content li span:first-child {
+  float: left;
+  width: 2em;
+  margin-top: 0.5em;
+  height: 2em;
+  margin-left: 1em;
+  clear: both;
+}
+.content li span:nth-child(2) {
+  display: inline-block;
+  color: #069DD4;
+  font-size: 1.3rem;
+  padding: 1em;
+}
+
+.album-icon{
+	background: url(../imgs/icon-album.png) center no-repeat;
+	background-size: contain;
+}
+.wallet-icon{
+	background: url(../imgs/icon-wallet.png) center no-repeat;
+	background-size: contain;
+}
+.card-icon{
+	background: url(../imgs/icon-card.png) center no-repeat;
+	background-size: contain;
+}
+.collect-icon{
+	background: url(../imgs/icon-collect.png) center no-repeat;
+	background-size: contain;
+}
+.set-icon{
+	background: url(../imgs/icon-set.png) center no-repeat;
+	background-size: contain;
+}
+
+
+/*content1 内容列表*/
+.content1 ul{
+	  overflow: auto;
+}
+.content1 li{
+	margin: 0;
+	padding-top: 1em;
+	color: #272822;
+	border-bottom: 1px solid #E6E6E6;
+	list-style: none;
+}
+.content1 h3 {
+  white-space:nowrap;
+  margin: 0;
+  font-size: 2em;
+  width: 97%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content1 p{
+	font-size: 1.5em;
+	height: 2.2em;
+	overflow: hidden;
+}
